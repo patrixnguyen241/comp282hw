@@ -3,8 +3,14 @@ public class Point {
     public int y = 0;
 
     // Default Constructor (Exercise 3 modification needed here)
-    public Point() {
+    public Point(int size) {
         // Automatically provided if none defined
+        this.x = size;
+        this.y = size;
+    }
+
+    public Point() {
+        this(0);
     }
 
     // Two-argument constructor
